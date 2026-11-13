@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Application/Application.csproj" Id="cd08bc8e-d174-4e32-9196-437b58682b8f" />
+  <Project Path="CAapi/CAapi.csproj" />
+  <Project Path="Domin/Domin.csproj" Id="3e561a51-95d6-4e5b-8c4f-6682339f3cc2" />
+  <Project Path="Infrastructure/Infrastructure.csproj" Id="1e97df80-29d0-415f-b928-bd509a290808" />
+</Solution>

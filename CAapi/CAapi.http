@@ -1,0 +1,6 @@
+@CAapi_HostAddress = http://localhost:5287
+
+GET {{CAapi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
