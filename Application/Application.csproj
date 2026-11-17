@@ -12,6 +12,12 @@
 
   <ItemGroup>
     <PackageReference Include="MediatR" Version="15.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Text.UI" Version="18.12.81" />
+    <PackageReference Include="System.ObjectModel" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Featrues\Notes\query\" />
   </ItemGroup>
 
 </Project>

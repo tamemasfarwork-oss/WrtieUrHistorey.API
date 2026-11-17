@@ -3,6 +3,7 @@ using Infrastructure.conifg;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.IO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,6 +24,8 @@ namespace Infrastructure
      options.UseSqlServer(configuration.GetConnectionString("Default")));
 
             services.AddScoped<IAppDbContext>(sp => sp.GetRequiredService<AppDbContext>());
+            services.AddSingleton<IFileStorage>(
+                new LocalFileStorage(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot")));
 
             return services;
         }

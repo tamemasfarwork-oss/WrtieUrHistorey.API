@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CAapi.controller
 {
+    [ApiController]
+    [Route("api/[controller]")]   // => api/Boo
     public class BookController : Controller
     {
         private readonly IMediator _sender; 
